@@ -31,26 +31,26 @@ const Project = ({ project }) => {
   }, []);
 
   return (
-    <div className='project grid grid-cols-1 xl:grid-cols-5 overflow-hidden gap-20 relative'>
+    <div className='project overflow-hidden grid grid-cols-1 xl:grid-cols-5  gap-20 relative'>
       {/* Background Image with Glassy Effect */}
       <div
-        className='absolute inset-0 bg-cover bg-center z-0'
+        className='absolute  inset-0 bg-cover bg-center z-0'
         style={{
-          backgroundImage: `url(${project.image1})`,
-          backgroundSize: '100% 100%', // Ensures the image covers the entire area
-          backgroundPosition: 'center',
-          height: '100vh',
-          filter: 'blur(2px)', // Apply blur effect for glassy background
-          opacity: '0.6', // Adjust opacity for a glassy effect
-          transition: 'opacity 0.5s ease-in-out',
-        }}
+    backgroundImage: `url(${project.image1})`,
+    backgroundSize: '100%', // Ensures the image covers the entire area without distortion
+    backgroundPosition: 'top',
+    height: '100vh', // Set full height for the viewport
+    filter: 'blur(1px)', // Apply blur effect for glassy background
+    opacity: '0.6', // Adjust opacity for a glassy effect
+    transition: 'opacity 0.5s ease-in-out',
+  }}
       ></div>
 
       {/* Darker Overlay for Enhanced Glassy Effect */}
       <div className='absolute inset-0 bg-black opacity-40 z-10'></div> {/* Adjust opacity to make it darker */}
 
       <div
-        className='project-left xl:col-span-3 flex flex-col gap-6 relative p-8 z-20'
+        className='project-left xl:col-span-3 flex flex-col  gap-6 relative p-8 z-20'
         ref={projectLeftRef}
       >
         <span className='text-9xl text-yellow-300 shadow-lg'> {/* Changed text color to yellow for brightness */}
