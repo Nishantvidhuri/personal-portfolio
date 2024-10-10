@@ -20,14 +20,14 @@ const Hero = () => {
 
   return (
     <div
-      className='hero container mx-auto mt-20 ml-20  flex  justify-center items-center overflow-hidden'
+      className='hero container mx-auto mt-20 ml-20 flex justify-center items-center overflow-hidden'
       id='hero'
     >
       <div className='hero-image' ref={heroImageRef}></div>
       <div className='shutter shutter-left overflow-hidden'>
-        <h1 ref={heroHeadline1Ref}>Front End</h1>
+        <h1 ref={heroHeadline1Ref}>FrontEnd</h1>
       </div>
-      <div className='shutter shutter-right mr-20 overflow-hidden'>
+      <div className='shutter shutter-right overflow-hidden'>
         <h1 ref={heroHeadline2Ref}>Developer</h1>
       </div>
       <div className='circle-left'></div>
@@ -37,4 +37,3 @@ const Hero = () => {
 };
 
 export default Hero;
- 

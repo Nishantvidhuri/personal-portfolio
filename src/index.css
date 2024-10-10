@@ -203,6 +203,14 @@ button {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 640px) { /* Adjust the max-width as needed */
+  .shutter-right {
+    transform: translate(-40px, -150px); /* Apply your mobile transform */
+  }
+  .shutter-left {
+    transform: translateY(100px); /* Apply your mobile transform */
+  }
+}
 
 .section-title {
   font-size: 10vw;
